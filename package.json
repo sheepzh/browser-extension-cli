@@ -1,0 +1,40 @@
+{
+    "name": "b6e8-cli",
+    "version": "1.0.0",
+    "description": "Browser extension cli",
+    "scripts": {
+        "local": "npm i -g && b6e8",
+        "dev": "ts-node src/index.ts",
+        "build": "webpack --mode=development --config=build/webpack.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sheepzh/browser-extension-cli"
+    },
+    "keywords": [
+        "cli",
+        "browser-extension"
+    ],
+    "main": "./bin/index.js",
+    "bin": {
+        "b6e8": "./bin/index.js"
+    },
+    "author": "zhy",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^15.6.1",
+        "@types/validate-npm-package-name": "^3.0.2",
+        "ts-loader": "^9.2.2",
+        "ts-node": "^10.0.0",
+        "typescript": "^4.3.2",
+        "webpack-cli": "^4.7.0"
+    },
+    "dependencies": {
+        "@schemastore/package": "^0.0.6",
+        "@types/inquirer": "^7.3.1",
+        "colors": "^1.4.0",
+        "commander": "^2.20.3",
+        "inquirer": "^8.1.0",
+        "os-locale": "^5.0.0"
+    }
+}
